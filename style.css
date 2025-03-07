@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+      
+      
+}
+body {
+    background: url('/img/fondo.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+ 
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    font-family: "Forum", serif;
+    font-style: normal;
+   
+}
+
+.flor-jere {
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px; /* Espacio entre las líneas y el texto */
+    position: relative;
+}
+
+.flor-jere::before,
+.flor-jere::after {
+    content: "";
+    width: 49px; /* Longitud de las líneas */
+    height: 1px; /* Grosor de las líneas */
+    background-color: black;
+}
+.fecha {
+    font-family: "Abhaya Libre", serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    font-size: 25px;
+}
+
+.fecha_1 {
+    display: flex;
+    flex-direction: column; /* Coloca "15" arriba y "2025" abajo */
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0.8;
+    margin-top: 25px;
+  
+}
+
+
+
+
+.anio {
+    font-size: 30px; 
+    font-weight: bold; 
+}
+
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%; /* Asegura que ocupe todo el espacio disponible */
+    align-items: flex-start; /* Centra verticalmente */
+    font-family: "Abhaya Libre", serif;
+    font-size: 18px;
+}
+
+.izquierda{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: end; 
+    width: 20%; 
+
+}
+
+
+.izquierda::after {
+    content: "";
+    width: 1px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ .derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align:start; 
+    width: 20%; 
+}
+
+.izquierda img, . img {
+    margin-bottom: 15px;
+}
+
+
+.izquierda .confirmacion{
+    max-width: ;
+}
+
+.button {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #88a58d;
+    color: white;
+    text-decoration: none;
+    border-radius: 120px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Abhaya Libre", serif;
+    text-align: center;
+}
