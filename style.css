@@ -7,7 +7,7 @@
       
 }
 body {
-    background: url('/img/fondo.png') no-repeat center center;
+    background: url('/img/fondo1.png') repeat center center;
     background-size: cover;
     text-align: center;
 }
@@ -21,7 +21,7 @@ body {
     gap: 20px;
 }
 .section {
-    background: rgba(255, 255, 255, 0);
+  
     padding: 20px;
  
 }
@@ -35,13 +35,17 @@ body {
    
 }
 
+.hora {
+    margin-bottom: 40px; /* Ajusta el valor según sea necesario */
+}
+
 .flor-jere {
     font-size: 30px;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px; /* Espacio entre las líneas y el texto */
+    gap: 10px; /* Espacio entre las líneas y el texto */
     position: relative;
 }
 
@@ -86,8 +90,8 @@ body {
 
 .info {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content:center;
+    gap: 35px;
     width: 100%; /* Asegura que ocupe todo el espacio disponible */
     align-items: flex-start; /* Centra verticalmente */
     font-family: "Abhaya Libre", serif;
@@ -104,7 +108,7 @@ body {
 }
 
 
-.izquierda::after {
+.info::after {
     content: "";
     width: 1px;
     height: 200px;
@@ -114,6 +118,7 @@ body {
     transform: translateX(-50%);
 }
 
+
  .derecha {
     display: flex;
     flex-direction: column;
@@ -122,24 +127,34 @@ body {
     width: 20%; 
 }
 
-.izquierda img, . img {
+.izquierda img,
+.derecha img {
     margin-bottom: 15px;
 }
 
 
-.izquierda .confirmacion{
-    max-width: ;
-}
-
 .button {
     display: inline-block;
-    padding: 3px 10px;
+    padding: 4px 10px; /* Más cómodo para hacer clic */
     background: #88a58d;
     color: white;
     text-decoration: none;
-    border-radius: 120px;
+    border-radius: 50px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 13px;
     font-family: "Abhaya Libre", serif;
     text-align: center;
+    transition: background 0.3s ease;
 }
+
+.button:hover {
+    background: #6f8d74; /* Efecto hover más oscuro */
+}
+
+.confirmacion {
+    max-width: 100px; /* Ajusta el ancho del texto */
+    font-size: 16px; /* Reduce el tamaño de la fuente */
+    line-height: 1.2; /* Reduce la altura entre líneas */
+    text-align:end; /* Justifica el texto para mejor distribución */
+}
+
