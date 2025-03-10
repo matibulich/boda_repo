@@ -316,4 +316,7 @@ body {
     .modal-content p {
         font-size: 20px;
     }
+    .countdown div {
+        width: 13.33vh;
+    }
 }
