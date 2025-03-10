@@ -87,3 +87,26 @@ function actualizarCuentaRegresiva() {
 
 setInterval(actualizarCuentaRegresiva, 1000);
 actualizarCuentaRegresiva();
+
+
+///////////////////////////////////////ajustar linea////////////////////////////////
+
+function ajustarLineaSeparadora() {
+    const seccionesInfo = document.querySelectorAll(".info");
+    
+    seccionesInfo.forEach((seccion) => {
+        const izquierda = seccion.querySelector(".izquierda");
+        const derecha = seccion.querySelector(".derecha");
+        const linea = seccion.querySelector(".linea-separadora");
+
+        if (izquierda && derecha && linea) {
+            // Calculamos la altura más grande entre los dos bloques de texto
+            const alturaMax = Math.max(izquierda.offsetHeight, derecha.offsetHeight);
+            linea.style.height = `${alturaMax}px`;
+        }
+    });
+}
+
+// Llamar la función cuando cargue la página y cuando se redimensione la ventana
+window.addEventListener("load", ajustarLineaSeparadora);
+window.addEventListener("resize", ajustarLineaSeparadora);
