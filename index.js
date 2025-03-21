@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Datos bancarios (fijos para ambos casos)
-    const datosBancarios = `CBU: 456645468794121<br>ALIAS: bodaNuestra <br>Titular: Juan Perez`;
+    const datosBancarios = `CBU: 4566454687941211<br>ALIAS: bodaNuestra <br>Titular: Juan Perez`;
 
     // Función para abrir el modal con el título correspondiente
     function openModal(title) {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Copiar datos bancarios al portapapeles
     copyButton.addEventListener("click", () => {
-        const datos = `456645468794121`;
+        const datos = `4566454687941211`;
         navigator.clipboard.writeText(datos).then(() => {
             copyMessage.innerHTML = "CBU Copiado ✅";
             copyMessage.style.opacity = "1";
