@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Datos bancarios (fijos para ambos casos)
-    const datosBancarios = `CBU: 4530000800015133660948<br>ALIAS: bodafloryjere<br>Titular: Jeremias Camara`;
+    const datosBancarios = `CBU: 456645468794121<br>ALIAS: bodaNuestra <br>Titular: Juan Perez`;
 
     // Función para abrir el modal con el título correspondiente
     function openModal(title) {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Copiar datos bancarios al portapapeles
     copyButton.addEventListener("click", () => {
-        const datos = `4530000800015133660948`;
+        const datos = `456645468794121`;
         navigator.clipboard.writeText(datos).then(() => {
             copyMessage.innerHTML = "CBU Copiado ✅";
             copyMessage.style.opacity = "1";
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /////////////////////////////////////////////////////////CUENTA REGRESIVA////////////////////////////
 function actualizarCuentaRegresiva() {
-    const fechaObjetivo = new Date('August 15, 2025 18:00:00').getTime();
+    const fechaObjetivo = new Date('August 15, 2029 18:00:00').getTime();
     const ahora = new Date().getTime();
     const diferencia = fechaObjetivo - ahora;
 
